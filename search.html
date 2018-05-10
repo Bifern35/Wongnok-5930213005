@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Wongnok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/default.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">   
+</head>
+
+<body class="bg-info">
+    <nav class="navbar navbar-expand-sm|md|lg|-xl navbar-light bg-secondary text-white">
+        <a class="navbar-brand  text-white" href="index.html"><i class="material-icons">location_on</i>Wongnok</a>
+        <button class="navbar-toggler hidden-lg-up" data-target="#collapsibleNavId" data-toggle="collapse" type="button" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html"><i class="material-icons">home</i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="search.html"><i class="material-icons">search</i>Search</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html"><i class="material-icons">contacts</i>About Me</a>
+                </li>                
+        </ul></div>
+    </nav>
+    <div class="container">
+        <h1><b>Search</b></h1>
+        <form>
+            <div class="form-group">
+                <label for=""><b>Search</b></label>
+                <input class="form-control bg-dark text-info" id="keyword" name="keyword" type="text" aria-describedby="helpId" placeholder="Keyword ex. Cafe, Seafood">
+            </div>
+            <div class="form-group">
+                <label for=""><b>Category</b></label>
+                <select class="form-control bg-dark text-info" id="type" name="type">
+                    <option value="resturant">Resturant</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="beauty_salon">Beauty Salon</option>
+                    <option value="gas_station">Gas Station</option>
+                    <option value="atm">ATM</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label for=""><b>Distance</b></label>
+                    <select class="form-control bg-dark text-info" id="radius" name="radius">
+                        <option value="500">500 m</option>
+                        <option value="1000">1 km</option>
+                        <option value="5000">5 km</option>
+                    </select>
+                </div>
+            <a class="btn btn-outline-dark" id="search" name href="#" role="button"><i class="material-icons">search</i> Search</a>
+            <p></p>
+            <h4><b>Recommend</b></h4>
+            <hr>
+            <div id="searchresult"></div>       
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js" type="text/javascript"></script>
+    <script src="js/placesearch.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

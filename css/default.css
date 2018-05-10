@@ -1,0 +1,28 @@
+*{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.lead{
+    font-size: 20pt;
+}
+.thumbnail{
+    height: 80px;
+    width: 170px;
+}
+.form-group{
+    font-size: 12pt;
+}
+.carousel-inner img {
+    height: 400px;
+}
+.checked {
+    color: rgb(177, 39, 92);
+}
+.opennow{
+    font-size: 40pt;
+}
+.address{
+    font-size: 30pt;
+}
+.phone{
+   font-size: 30pt;
+}
